@@ -7,13 +7,49 @@
 
     <meta name="author" content="Changling Li">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_blank">
     <link rel="shortcut icon" href="image/favicon/icon.JPG" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    <script>
+      function setVisiblePublications(n) {
+        var container = document.getElementById('pub-div');
+        if (!container) return;
+        var table = container.querySelector('table');
+        if (!table) return;
+        var rows = table.querySelectorAll('tbody > tr');
+        if (!rows.length) return;
+        var idx = Math.min(n, rows.length) - 1;
+        var first = rows[0];
+        var last = rows[idx];
+        var top = first.offsetTop;
+        var bottom = last.offsetTop + last.offsetHeight;
+        var padding = 8;
+        container.style.height = (bottom - top + padding) + 'px';
+        container.style.overflow = 'auto';
+      }
+
+      function pressBtn(p) {
+        var btn = document.getElementById('pub-btn');
+        if (btn.className === 'fa-solid fa-plus-square') {
+          btn.className = 'fa-solid fa-minus-square';
+          document.getElementById('pub-div').style = '';
+        } else {
+          btn.className = 'fa-solid fa-plus-square';
+          setVisiblePublications(3);
+        }
+      }
+
+      window.addEventListener('load', function() {
+        setVisiblePublications(3);
+      });
+    </script>
     
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -22,20 +58,22 @@
                 <p class="name" style="text-align: center;">
                   Changling Li
                 </p>
-                <p>I'm a computer science master student at <a href="https://ethz.ch/en.html">ETH Zurich</a> majoring in machine intelligence and minoring in theoretical computer science. My research interest lies in the cross-section of multi-agent systems and AI safety, with the goal to understand the dynamic interplay between artificial intelligence and society. This passion for cooperation and ethical considerations is deeply rooted in my personal experiences and identity, especially during my time at <a href="https://www.uwc.org/">United World College</a> where I witnessed the power of communication and mutual respect in building understanding and unity despite massive culture differences. I believe that developing safe interactions among AIs, and between AIs and humans requires the same foundational principles with both technical innovation and philosophical advancement. 
+                <p><b>Research Keywords</b>: multi-agent systems; AI safety; AI governance; (multi-agent)reinforcement learning; cooperative AI; game theory.
+                </p>
+                <p><b>Motivation</b>: My research interests lie in multi-agent systems, AI safety, and AI governance. My goal is to prevent pathologies from human societies to reappear in AI systems and ensure safety and security for agent interactions.  This passion for safe interactions is deeply rooted in my personal experiences and identity, especially during my time at <a href="https://www.uwc.org/">United World College</a> where I witnessed the power of communication and mutual respect in building understanding and unity despite massive culture differences. I believe that achieving safe interactions among agents, and between agents and humans requires the same foundational principles with both technical innovation and philosophical advancement.
                 </p>
                 <p>
-                  I am currently working with Prof. <a href="https://zhijing-jin.com/home/">Zhijing Jin</a>, and <a href="https://williamd4112.github.io/">Zhang-Wei Hong</a> in collaboration with Prof. <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a> at <a href="https://www.csail.mit.edu/">MIT</a> and Prof. <a href="https://scholar.google.com/citations?user=-2fJStwAAAAJ">Joni Pajarinen</a> at <a href="https://rl.aalto.fi/">Aalto University</a>. Previously, I obtained my B.A. degrees in computer science and physics with a concentration in astrophysics at <a href="https://www.colby.edu/">Colby College</a>. I was fortunate to work with Prof.<a href="https://cs.colby.edu/yingli/">Ying Li</a> for my honor thesis which led me to the field of decision-making in multi-agent systems.
+                  <b>Bio</b>: I'm a computer science master student at <a href="https://ethz.ch/en.html">ETH Zurich</a> majoring in machine intelligence and minoring in theoretical computer science. I am currently working with Prof. <a href="https://zhijing-jin.com/home/">Zhijing Jin</a>, and <a href="https://williamd4112.github.io/">Zhang-Wei Hong</a> in collaboration with Prof. <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a> at <a href="https://www.csail.mit.edu/">MIT</a> and Prof. <a href="https://scholar.google.com/citations?user=-2fJStwAAAAJ">Joni Pajarinen</a> at <a href="https://rl.aalto.fi/">Aalto University</a>. Previously, I obtained my B.A. degrees in computer science and physics with a concentration in astrophysics at <a href="https://www.colby.edu/">Colby College</a>. I was fortunate to work with Prof.<a href="https://cs.colby.edu/yingli/">Ying Li</a> for my honor thesis which led me to the field of decision-making in multi-agent systems.
                 </p>
-		<p>
-                  Outside research, I enjoy watching films, particularly horrors. I also love playing squash and rowing. Before I got into machine learning, I was an art student. 
+		            <p>
+                  Outside research, I enjoy watching <a href="https://letterboxd.com/XavierLi/">films</a>, particularly horrors. I also love playing squash and rowing. Before I got into machine learning, I was an art student. You can find my artwork from <a href="https://drive.google.com/file/d/14AAnbT__CSnZGDyJGBgeiWpvzUnkBO0W/view?usp=sharing">portfolio 1</a>, <a href="https://drive.google.com/file/d/1tSpXEgCoMxCFh271gxKPXmenfH66Nzf5/view?usp=sharing">portfolio 2</a>, <a href="https://drive.google.com/file/d/1lPLvf6APihMJoWCBWiGWNw00VPOG-Q9C/view?usp=sharing">comparative studies</a>, and <a href="https://drive.google.com/file/d/1GaoPqOn4UU0Sj2LY5Kx5EUnIygtBVPIn/view?usp=sharing">architecture essay</a>.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:lichan@student.ethz.ch">Email</a> &nbsp;/&nbsp;
-                  <a href="data/ChanglingLi_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=jgJvfvMAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/ChanglingXavier">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/XavierChanglingLi">Github</a>
+                  <a href="mailto:lichan@student.ethz.ch" aria-label="Email" title="Email"><i class="fa-solid fa-envelope fa-2x"></i></a> &nbsp;/&nbsp;
+                  <a href="data/ChanglingLi_CV.pdf" aria-label="CV" title="CV"><i class="ai ai-cv-square ai-2x"></i></a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=jgJvfvMAAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar-square ai-2x"></i></a> &nbsp;/&nbsp;
+                  <a href="https://x.com/ChanglingXavier" aria-label="X (Twitter)" title="X (Twitter)"><i class="fa-brands fa-x-twitter fa-2x"></i></a> &nbsp;/&nbsp;
+                  <a href="https://github.com/XavierChanglingLi" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -43,175 +81,173 @@
               </td>
             </tr>
 
-
+           <!--publications-->
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publication</h2>
+                <h2><i class="fa-regular fa-file-lines"></i>&nbsp;&nbsp;Publications<i class="fa-solid fa-plus-square" style="float: right;" onclick="pressBtn(0)" id="pub-btn"></i></h2>
                 <!-- <p>
                   I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
                 </p> -->
               </td>
             </tr>
           </tbody></table>
+          <div style="height: 400px; overflow: auto;" id="pub-div">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-    <tr onmouseout="RLC_stop()" onmouseover="RLC_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='RLC_image'><video  width=100% muted autoplay loop>
-          <source src="image/RLC_2024.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='image/RLC_2024.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function RLC_start() {
-            document.getElementById('RLC_image').style.opacity = "1";
-          }
-
-          function RLC_stop() {
-            document.getElementById('RLC_image').style.opacity = "0";
-          }
-          RLC_stop()
-        </script>
+    
+    <!--EMNLP 2025-->
+    <tr>
+      <td class="pub-avatar">
+        <span class="highlight" style="display:block;padding:6px;border-radius:6px;">
+          <img src='image/EMNLP_2025.png'>
+        </span>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td class="pub-description">
+        <span class="highlight" style="display:block;padding:6px;border-radius:6px;">
+        <a href="https://arxiv.org/abs/2506.22957">
+          <span class="papertitle">Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models</span>
+        </a>
+        <br>
+        Ethan Choi*,
+        <strong>Changling Li</strong>*,
+        Yongjin Yang,
+        Zhijing Jin
+        <br>
+        <em>Empirical Methods in Natural Language Processing (EMNLP main conference)</em>, 2025
+        <br>
+        <a href="https://github.com/younwoochoi/InterlocutorAwarenessLLM">Code</a>
+        /
+        <a href="data/EMNLP_2025_Poster.pdf">Poster</a>
+        /
+        <a href="https://docs.google.com/presentation/d/1_mpKH68oVT3z-otLZBWj8AQAoT5Bs4kT5X6huYWYBIQ/edit?usp=sharing">Presentation</a>
+        /
+        <a href="https://arxiv.org/abs/2506.22957">arXiv</a>
+        <p></p>
+        <p>
+          We introduce “interlocutor awareness”—an agent-to-agent theory of mind measuring LLM’s ability to recognize and adapt to who they are talking to. We define this term, build the first systematic evaluation, and show why understanding it is crucial for AI alignment, AI safety, and multi-LLM cooperation.
+        </p>
+        </span>
+      </td>
+    </tr>
+
+    <!--IoT-J 2024-->
+    <tr>
+      <td class="pub-avatar">
+        <img src='image/IoT_2024.png'>
+      </td>
+      <td class="pub-description">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10777009">
+          <span class="papertitle">Scaling Up Energy-Aware Multiagent Reinforcement Learning for Mission-Oriented Drone Networks With Individual Reward</span>
+        </a>
+        <br>
+        <strong>Changling Li</strong>,
+        Ying Li
+        <br>
+        <em>Internet of Things Journal (IoT-J)</em>, 2024
+        <br>
+        <a href="https://github.com/XavierChanglingLi/MARL_for_MODN">Code</a>
+        /
+        <a href="https://www.researchgate.net/publication/386447478_Scaling_up_Energy-Aware_Multi-Agent_Reinforcement_Learning_for_Mission-Oriented_Drone_Networks_With_Individual_Reward">arXiv</a>
+        <p></p>
+        <p>
+          We formulate mission-oriented drone network as a mixed game and create a coopetition multi-agent reinforcement learning framework to optimize the energy consumption. By comparing it to the shared-reward setting, we explore the credit assignment problem.
+        </p>
+      </td>
+    </tr>
+    
+    <!--RLC 2024-->
+    <tr>
+      <td class="pub-avatar">
+        <img src='image/RLC_2024.png'>
+      </td>
+      <td class="pub-description">
         <a href="https://rlj.cs.umass.edu/2024/papers/Paper198.html">
           <span class="papertitle">ROER: Regularized Optimal Experience Replay</span>
         </a>
         <br>
         <strong>Changling Li</strong>,
-        <a href="https://williamd4112.github.io/">Zhang-Wei Hong</a>,
-        <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>,
-        <a href="https://divyanshgarg.com/">Divyansh Garg</a>,
-        <a href="https://scholar.google.com/citations?user=-2fJStwAAAAJ&hl=en">Joni Pajarinen</a>
+        Zhang-Wei Hong,
+        Pulkit Agrawal,
+        Divyansh Garg,
+        Joni Pajarinen
         <br>
-        <em>RLC</em>, 2024
+        <em>Reinforcement Learning Conference (RLC)</em>, 2024
         <br>
         <a href="https://github.com/XavierChanglingLi/Regularized-Optimal-Experience-Replay">Code</a>
         /
         <a href="data/RLC_2024_Poster.pdf">Poster</a>
+        / 
+        <a href=" https://docs.google.com/presentation/d/1YnakiI81uulW6TWuJkysh-amYOHGFHylQizVeYoY1X0/edit?usp=sharing">Presentation</a>
         /
         <a href="https://arxiv.org/abs/2407.03995">arXiv</a>
         <p></p>
         <p>
-        By formulating experience prioritization as an occupancy optimization problem, we show that the form of TD-error based prioritization is closely associated with the form of the loss function and thus, we propose a new formulation of prioritization using KL-divergence.
+        By formulating experience prioritization as an occupancy optimization problem, we show that the form of TD-error based prioritization is associated with the loss function and we propose a series of new prioritization formulations.
         </p>
       </td>
     </tr>
 
-
-    <!-- <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
+    <!--ICCCN 2022-->
+    <tr>
+      <td class="pub-avatar">
+        <img src='image/ICCCN_2022.png'>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
-</span>
-        </a>
-        <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p>
-        <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
-        </p>
-      </td>
-    </tr> -->
-
-
-    <tr onmouseout="ICCCN_stop()" onmouseover="ICCCN_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ICCCN_2022'><video  width=100% muted autoplay loop>
-          <source src="image/ICCCN_2022.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='image/ICCCN_2022.png' width=100% height=60%>
-        </div>
-        <script type="text/javascript">
-          function ICCCN_start() {
-            document.getElementById('ICCCN_2022').style.opacity = "1";
-          }
-
-          function ICCCN_stop() {
-            document.getElementById('ICCCN_2022').style.opacity = "0";
-          }
-          ICCCN_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td class="pub-description">
         <a href="https://ieeexplore.ieee.org/abstract/document/9868945">
           <span class="papertitle">Energy-Aware Multi-Agent Reinforcement Learning for Collaborative Execution in Mission-Oriented Drone Networks</span>
         </a>
         <br>
-				<a href="https://cs.colby.edu/yingli/">Ying Li</a>,
+				Ying Li,
 				<strong>Changling Li</strong>,
-				<a href="https://www.linkedin.com/in/jiyao-chen/">Jiyao Chen</a>,
-				<a href="https://www.linkedin.com/in/christina-roinou/?originalSubdomain=gr">Christine Roinou</a>		
+				Jiyao Chen,
+				Christine Roinou		
         <br>
-        <em>ICCCN</em>, 2022
+        <em>International Conference on Computer Communications and Networks (ICCCN)</em>, 2022
         <br>
-        <!-- <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
+        <a href="https://github.com/XavierChanglingLi/MARL_for_MODN">Code</a>
         /
-        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
-        /
-        <a href="https://arxiv.org/abs/2402.12377">arXiv</a> -->
+        <a href="https://arxiv.org/abs/2410.22578">arXiv</a>
         <p></p>
         <p>
-        Creating multi-agent reinforcement learning framework for mission-oriented drone networks to enable energy-efficient task planning and execution.
+        We create a multi-agent reinforcement learning framework for mission-oriented drone networks to enable energy-efficient task planning and execution.
         </p>
       </td>
     </tr>
 
 
           </tbody></table>
+          </div>
 
+          <!--honors-->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td style="padding:12px 20px 6px 20px;">
+                <h2 style="margin-top:14px;"><i class="fa-solid fa-award"></i>&nbsp;&nbsp;Honors & Scholarships</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr>
+              <td style="padding:6px 20px 12px 20px;">
+                <p><b>Honors</b>: <a href="https://www.pbk.org/">Phi Beta Kappa</a>, <a href="https://students.aip.org/sigma-pi-sigma">Sigma Pi Sigma</a>, <a href="https://www.davisuwcscholars.org/">UWC Davis Scholar</a>, Magna Cum Laude, Dean’s List, Distinction in both majors</p>
+                <p><b>Scholarships</b>: <a href="https://www.uwcchina.org/en">UWC National Committee Scholarship</a>, <a href="https://www.davisuwcscholars.org/">UWC Davis Scholarship</a>, <a href="https://www.colby.edu/">Colby College Institutional Grant</a></p>
+              </td>
+            </tr>
+          </tbody></table>
           
+           <!--teaching-->
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Teaching</h2>
+                <h2><i class="fa-solid fa-chalkboard-teacher"></i>&nbsp;&nbsp;Teaching</h2>
               </td>
             </tr>
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/colby.png"></td>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/colby.png" width="200"></td>
               <td width="75%" valign="center">
                 <h3>Teaching Assistant, <a href="https://cs.colby.edu/">Department of Computer Science, Colby College</a></h3>
                 <p>CS 353 Interactive System</p>
@@ -224,34 +260,7 @@
                   <p>PH 242 Modern Physics II</p>
               </td>
             </tr>
-            <!-- <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr> -->
-            
 
-            <!-- <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr> -->
             
             
           </tbody></table>
