@@ -98,19 +98,19 @@
   }
 
   .theme-toggle__icon--moon {
-    display: none;
+    display: none !important;
   }
   .theme-toggle__icon--sun {
-    display: inline;
+    display: inline-block !important;
   }
 }
 
 [data-theme="light"] .theme-toggle {
   .theme-toggle__icon--moon {
-    display: inline;
+    display: inline-block !important;
   }
   .theme-toggle__icon--sun {
-    display: none;
+    display: none !important;
   }
 }
 

@@ -190,16 +190,19 @@
   }
 
   button:not(.theme-toggle) {
-    display: none;
     position: absolute;
     height: 100%;
     right: 0;
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: transparent;
+    background-color: var(--bg);
     color: var(--text);
     cursor: pointer;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   .visible-links {
