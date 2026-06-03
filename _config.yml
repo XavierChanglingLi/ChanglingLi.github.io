@@ -2,7 +2,6 @@
 title: "Changling Li"
 description: "Incoming PhD student at MPI-IS"
 repository: "XavierChanglingLi/ChanglingLi.github.io"
-google_scholar_stats_use_cdn: true
 
 # google analytics (leave empty to disable)
 google_analytics_id:
@@ -80,7 +79,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-  - google_scholar_crawler
 keep_files:
   - .git
   - .svn
