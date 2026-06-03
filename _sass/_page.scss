@@ -12,7 +12,7 @@
   padding-bottom: 2em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
-  background-color: #1a1a1a;
+  background-color: var(--bg);
   min-height: calc(100vh - 60px);
 
   @include breakpoint($x-large) {
@@ -70,8 +70,8 @@
     margin-bottom: 1em;
     padding-bottom: 0.75em;
     font-size: 1.6em;
-    color: #ff69b4;
-    border-bottom: 3px solid #ff69b4;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
     font-weight: 700;
     letter-spacing: 0.5px;
   }
@@ -81,8 +81,8 @@
     margin-bottom: 1em;
     padding-bottom: 0.5em;
     font-size: 1.25em;
-    color: #ff85c2;
-    border-bottom: 2px solid #ff69b4;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
     font-weight: 700;
     letter-spacing: 0.5px;
   }
@@ -90,7 +90,7 @@
   h3 {
     margin-top: 1.5em;
     margin-bottom: 0.8em;
-    color: #ffd1e8;
+    color: var(--accent-hover);
     font-weight: 600;
     font-size: 1.05em;
   }
@@ -98,7 +98,7 @@
   p, li, dl {
     font-size: 1em;
     line-height: 1.7;
-    color: #e0e0e0;
+    color: var(--text);
   }
 
   /* paragraph indents */
@@ -119,7 +119,7 @@
 
     &:hover {
       text-decoration: none;
-      color: #ffc0e0;
+      color: var(--accent-hover);
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -241,7 +241,7 @@
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border);
 
   @include breakpoint(max-width $small) {
     .btn span {
@@ -315,7 +315,7 @@
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: var(--accent-hover);
   }
 }
 
@@ -333,7 +333,7 @@
   margin-bottom: 10px;
   padding-top: 2rem;
   font-size: $type-size-6;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border);
   text-transform: uppercase;
 }
 
@@ -361,7 +361,7 @@
   margin: 1em 0;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--border);
   }
 }
 
@@ -385,7 +385,7 @@
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid $border-color;
+    border: 1px solid var(--border);
   }
 }
 
@@ -423,7 +423,7 @@
 .page__related {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border);
   @include clearfix();
   float: left;
 

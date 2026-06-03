@@ -23,5 +23,20 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+      <i class="fas fa-sun theme-toggle__icon--sun"></i>
+      <i class="fas fa-moon theme-toggle__icon--moon"></i>
+    </button>
   </div>
 </div>
+<script>
+(function() {
+  var toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('click', function() {
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+})();
+</script>

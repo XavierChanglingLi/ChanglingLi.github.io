@@ -46,7 +46,7 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
-    color: #e0e0e0;
+    color: var(--text);
   }
 
   img {
@@ -54,11 +54,11 @@
   }
 
   .fa, .fas, .fab, .far, .fal, .ai {
-    color: #ffffff;
+    color: var(--text-heading);
   }
 
   li {
-    color: #e0e0e0;
+    color: var(--text);
   }
 }
 
@@ -127,14 +127,14 @@
   }
   font-family: $sans-serif;
   font-size: $type-size-4;
-  color: #ffffff;
+  color: var(--text-heading);
 }
 
 .author__chinese-name {
   margin: 4px 0 0 0;
   font-size: 1.1em;
   font-weight: 700;
-  color: #cccccc;
+  color: var(--text-muted);
 }
 
 .author__bio {
@@ -202,7 +202,7 @@
 
     &:hover {
       text-decoration: none;
-      color: #ff69b4;
+      color: var(--accent);
     }
   }
 }
@@ -216,7 +216,7 @@
     text-decoration: none;
     &:hover {
       text-decoration: none;
-      color: #ff69b4;
+      color: var(--accent);
     }
   }
   @include breakpoint($large) {

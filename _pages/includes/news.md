@@ -12,38 +12,38 @@
 }
 
 .news-scrollable::-webkit-scrollbar-track {
-  background: #2a2a2a;
+  background: var(--scrollbar-track);
   border-radius: 10px;
 }
 
 .news-scrollable::-webkit-scrollbar-thumb {
-  background: #ff69b4;
+  background: var(--accent);
   border-radius: 10px;
 }
 
 .news-scrollable::-webkit-scrollbar-thumb:hover {
-  background: #ff85c2;
+  background: var(--accent-hover);
 }
 
 .news-item {
-  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f2f 100%);
-  border-left: 4px solid #ff69b4;
+  background: var(--bg-card-gradient);
+  border-left: 4px solid var(--accent);
   border-radius: 6px;
   padding: 12px 14px;
   margin-bottom: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px var(--img-shadow);
 }
 
 .news-item:hover {
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.15);
+  box-shadow: 0 4px 8px var(--accent-glow);
   transform: translateX(4px);
 }
 
 .news-date {
   display: inline-block;
-  background-color: #ff69b4;
-  color: #1a1a1a;
+  background-color: var(--accent);
+  color: var(--bg);
   padding: 3px 8px;
   border-radius: 4px;
   font-size: 11px;
@@ -55,18 +55,18 @@
 .news-content {
   font-size: 14px;
   line-height: 1.5;
-  color: #e0e0e0;
+  color: var(--text);
 }
 
 .news-content a {
-  color: #ff69b4;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
 .news-content a:hover {
-  color: #ffc0e0;
+  color: var(--accent-hover);
 }
 </style>
 

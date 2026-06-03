@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ff69b4;
+  background-color: var(--accent);
   padding: 8px 14px;
   border-radius: 6px;
   margin-top: 1em;
@@ -12,7 +12,7 @@
 
 .pubs-section-bar h3 {
   margin: 0;
-  color: #1a1a1a;
+  color: var(--bg);
   font-size: 1em;
   font-weight: 700;
   border: none;
@@ -22,7 +22,7 @@
 .pubs-section-toggle {
   cursor: pointer;
   font-size: 0.9em;
-  color: #1a1a1a;
+  color: var(--bg);
   background-color: rgba(0, 0, 0, 0.15);
   width: 22px;
   height: 22px;
@@ -64,17 +64,17 @@
 }
 
 .pubs-section-content::-webkit-scrollbar-track {
-  background: #2a2a2a;
+  background: var(--scrollbar-track);
   border-radius: 10px;
 }
 
 .pubs-section-content::-webkit-scrollbar-thumb {
-  background: #ff69b4;
+  background: var(--accent);
   border-radius: 10px;
 }
 
 .pubs-section-content::-webkit-scrollbar-thumb:hover {
-  background: #ff85c2;
+  background: var(--accent-hover);
 }
 </style>
 

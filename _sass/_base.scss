@@ -5,13 +5,15 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background-color: var(--bg);
 }
 
 body {
   margin: 0;
   padding: 0;
   padding-bottom: 0em;
-  color: $text-color;
+  color: var(--text);
+  background-color: var(--bg);
   font-family: $global-font-family;
   line-height: 1.5;
 
@@ -65,7 +67,7 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid var(--text);
   a {
     color: inherit;
   }
@@ -93,7 +95,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted $text-color;
+  border-bottom: 1px dotted var(--text);
 }
 
 /* blockquotes */
@@ -103,7 +105,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  border-left: 0.25em solid var(--accent);
 
   cite {
     font-style: italic;
@@ -118,7 +120,7 @@ blockquote {
 /* links */
 
 a {
-  color: $link-color;
+  color: var(--accent);
   text-decoration: none;
 
   &:focus {
@@ -128,7 +130,7 @@ a {
   &:hover,
   &:active {
     outline: 0;
-    color: #ffc0e0;
+    color: var(--accent-hover);
   }
 }
 
@@ -167,7 +169,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border);
 }
 
 /* lists */
@@ -246,20 +248,20 @@ figure {
 
 figcaption {
   margin-bottom: 0.5em;
-  color: mix(#fff, $text-color, 25%);
+  color: var(--text-muted);
   font-family: $caption-font-family;
   font-size: $type-size-6;
 
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid var(--border);
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
     &:hover {
-      color: #ff69b4;
-      border-bottom-color: #ff69b4;
+      color: var(--accent);
+      border-bottom-color: var(--accent);
     }
   }
 }
