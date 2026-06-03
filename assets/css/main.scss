@@ -1,0 +1,182 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    padding-bottom: 2.5em;
+    margin-bottom: 1em;
+    background: #222222;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    border-left: 3px solid #3a3a3a;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &.cat-safety {
+        border-left-color: #b3fff0;
+    }
+    &.cat-multiagent {
+        border-left-color: #ffe0b3;
+    }
+    &.cat-governance {
+        border-left-color: #c8b3ff;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(255, 105, 180, 0.1);
+        border-color: #ff69b4;
+    }
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+
+        > p:first-of-type a {
+            font-size: 1.15em;
+            font-weight: 700;
+        }
+
+        > p:nth-of-type(2) strong {
+            color: #ffc0e0;
+        }
+    }
+
+    .paper-box-label {
+        position: absolute;
+        top: 12px;
+        left: -4px;
+        background: linear-gradient(135deg, #2a2a2a 0%, #1f1f2f 100%);
+        color: #ffffff;
+        padding: 5px 14px;
+        font-size: 0.85em;
+        font-weight: 700;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    .paper-category-tag {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        padding: 3px 10px;
+        font-size: 0.72em;
+        font-weight: 600;
+        border-radius: 12px;
+        z-index: 2;
+
+        &.tag-safety {
+            color: #b3fff0;
+            background: rgba(179, 255, 240, 0.12);
+            border: 1px solid rgba(179, 255, 240, 0.3);
+        }
+        &.tag-multiagent {
+            color: #ffe0b3;
+            background: rgba(255, 224, 179, 0.12);
+            border: 1px solid rgba(255, 224, 179, 0.3);
+        }
+        &.tag-governance {
+            color: #c8b3ff;
+            background: rgba(200, 179, 255, 0.12);
+            border: 1px solid rgba(200, 179, 255, 0.3);
+        }
+    }
+    
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 25%;
+            order: 1;
+        }
+        
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 75%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
+$scroll_offset : 2em;
+h1:before, .anchor:before { 
+    content: ''; 
+    display: block; 
+    position: relative; 
+    width: 0; 
+    height: $scroll_offset; 
+    margin-top: -$scroll_offset;
+}
+
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: #1a1a1a;
+    background-color: #ff69b4;
+    font-size: .8em;
+}
