@@ -1,4 +1,4 @@
-# 📖 Teaching
+# Teaching
 
 **Teaching Assistant, [Department of Computer Science, Colby College](https://cs.colby.edu/)**, 2019 - 2022
 - CS 353 Interactive System

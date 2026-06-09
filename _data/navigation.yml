@@ -3,19 +3,19 @@ main:
     url: "#"
 
   - title: "News"
-    url: "/#-news"
+    url: "/#news"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/#publications"
 
   - title: "Honors"
-    url: "/#-honors--scholarships"
+    url: "/#honors--scholarships"
 
   - title: "Service"
-    url: "/#-academic-service"
+    url: "/#academic-service"
 
   - title: "Teaching"
-    url: "/#-teaching"
+    url: "/#teaching"
 
   - title: "More"
-    url: "/#-beyond-research"
+    url: "/#beyond-research"

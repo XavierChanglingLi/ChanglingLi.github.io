@@ -1,4 +1,4 @@
-# 🎓 Academic Service
+# Academic Service
 
 **Workshop Organization**
 - Co-organizer, [AI4GOOD Workshop](https://ai4good-workshop.github.io/) at ICML, 2026

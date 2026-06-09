@@ -1,4 +1,4 @@
-# 🎨 Beyond Research
+# Beyond Research
 
 Outside research, I enjoy watching [films](https://letterboxd.com/XavierLi/) (particularly horrors), playing squash, and rowing.
 

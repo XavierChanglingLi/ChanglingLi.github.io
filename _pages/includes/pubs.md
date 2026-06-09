@@ -78,7 +78,7 @@
 }
 </style>
 
-# 📝 Publications
+# Publications
 
 <div class="pubs-section-bar">
 <h3>Preprint</h3>
@@ -116,7 +116,7 @@
 <div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026</span><span class='paper-category-tag tag-governance'>AI Governance</span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Position: Safe Models Do Not Guarantee Safe Societies: The Case for Sociopolitical Risk](https://icml.cc/virtual/2026/poster/67167)
+[Safe Models Do Not Guarantee Safe Societies](https://icml.cc/virtual/2026/poster/67167)
 
 David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Blin, Samuel Simko, Punya Pandey, Irene Strauss, Rada Mihalcea, Bernhard Schölkopf, Zhijing Jin
 

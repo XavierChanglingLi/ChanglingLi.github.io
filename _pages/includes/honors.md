@@ -1,4 +1,4 @@
-# 🎖 Honors & Scholarships
+# Honors & Scholarships
 
 **Honors**: [Phi Beta Kappa](https://www.pbk.org/), [Sigma Pi Sigma](https://students.aip.org/sigma-pi-sigma), [UWC Davis Scholar](https://www.davisuwcscholars.org/), Magna Cum Laude (top 5%), Dean's List, Distinction in both majors (Computer Science & Physics)
 
