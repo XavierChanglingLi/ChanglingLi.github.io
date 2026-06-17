@@ -96,8 +96,6 @@
 
 **Changling Li**, Terry Jingchen Zhang, Jie Zhang, Zhijing Jin, Sahar Abdelnabi, Maksym Andriushchenko
 
-*arXiv preprint*, 2026
-
 <i class="fa-brands fa-github"></i> [Code](https://github.com/aisa-group/decomposing-eval-awareness) / <i class="fa-solid fa-database"></i> [HuggingFace](https://huggingface.co/datasets/aisa-group/EvalAwareBench) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2605.23055)
 </div>
 </div>
@@ -113,14 +111,12 @@
 
 <div class="pubs-section-content" id="accepted-section">
 
-<div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026</span><span class='paper-category-tag tag-governance'>AI Governance</span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
+<div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026 Spotlight 🏆</span><span class='paper-category-tag tag-governance'>AI Governance</span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Safe Models Do Not Guarantee Safe Societies](https://icml.cc/virtual/2026/poster/67167)
 
 David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Blin, Samuel Simko, Punya Pandey, Irene Strauss, Rada Mihalcea, Bernhard Schölkopf, Zhijing Jin
-
-*International Conference on Machine Learning (**ICML Spotlight 🏆**)*, 2026
 </div>
 </div>
 
@@ -130,8 +126,6 @@ David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Bli
 [Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models](https://arxiv.org/abs/2506.22957)
 
 Ethan Choi\*, **Changling Li**\*, Yongjin Yang, Zhijing Jin
-
-*Empirical Methods in Natural Language Processing (**EMNLP Main**)*, 2025
 
 <i class="fa-brands fa-github"></i> [Code](https://github.com/younwoochoi/InterlocutorAwarenessLLM) / <i class="fa-solid fa-file-pdf"></i> [Poster](docs/EMNLP_2025_Poster.pdf) / <i class="fa-solid fa-person-chalkboard"></i> [Presentation](https://docs.google.com/presentation/d/1_mpKH68oVT3z-otLZBWj8AQAoT5Bs4kT5X6huYWYBIQ/edit?usp=sharing) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2506.22957)
 </div>
@@ -144,8 +138,6 @@ Ethan Choi\*, **Changling Li**\*, Yongjin Yang, Zhijing Jin
 
 **Changling Li**, Zhang-Wei Hong, Pulkit Agrawal, Divyansh Garg, Joni Pajarinen
 
-*Reinforcement Learning Conference (**RLC**)*, 2024
-
 <i class="fa-brands fa-github"></i> [Code](https://github.com/XavierChanglingLi/Regularized-Optimal-Experience-Replay) / <i class="fa-solid fa-file-pdf"></i> [Poster](docs/RLC_2024_Poster.pdf) / <i class="fa-solid fa-person-chalkboard"></i> [Presentation](https://docs.google.com/presentation/d/1YnakiI81uulW6TWuJkysh-amYOHGFHylQizVeYoY1X0/edit?usp=sharing) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2407.03995)
 </div>
 </div>
@@ -157,8 +149,6 @@ Ethan Choi\*, **Changling Li**\*, Yongjin Yang, Zhijing Jin
 
 **Changling Li**, Ying Li
 
-*Internet of Things Journal (**IoT-J**)*, 2024
-
 <i class="fa-brands fa-github"></i> [Code](https://github.com/XavierChanglingLi/MARL_for_MODN) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://www.researchgate.net/publication/386447478_Scaling_up_Energy-Aware_Multi-Agent_Reinforcement_Learning_for_Mission-Oriented_Drone_Networks_With_Individual_Reward)
 </div>
 </div>
@@ -169,8 +159,6 @@ Ethan Choi\*, **Changling Li**\*, Yongjin Yang, Zhijing Jin
 [Energy-Aware Multi-Agent Reinforcement Learning for Collaborative Execution in Mission-Oriented Drone Networks](https://ieeexplore.ieee.org/abstract/document/9868945)
 
 Ying Li, **Changling Li**, Jiyao Chen, Christine Roinou
-
-*International Conference on Computer Communications and Networks (**ICCCN**)*, 2022
 
 <i class="fa-brands fa-github"></i> [Code](https://github.com/XavierChanglingLi/MARL_for_MODN) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2410.22578)
 </div>
