@@ -117,6 +117,8 @@
 [Safe Models Do Not Guarantee Safe Societies](https://icml.cc/virtual/2026/poster/67167)
 
 David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Blin, Samuel Simko, Punya Pandey, Irene Strauss, Rada Mihalcea, Bernhard Schölkopf, Zhijing Jin
+
+<i class="fa-solid fa-file-lines"></i> [Paper](https://drive.google.com/file/d/1BiOEeQ2ySh4BPis8k-tVJ9p5EcD79MsS/view?usp=drivesdk) / <i class="fa-solid fa-file-pdf"></i> [Poster](docs/ICML2026_poster.pdf)
 </div>
 </div>
 
