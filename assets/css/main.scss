@@ -179,6 +179,19 @@ html, body, #main, .masthead, .sidebar, .paper-box, .news-item, .research-box {
         z-index: 2;
     }
 
+    .paper-category-tags {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        display: flex;
+        gap: 6px;
+        z-index: 2;
+
+        .paper-category-tag {
+            position: static;
+        }
+    }
+
     .paper-category-tag {
         position: absolute;
         bottom: 12px;

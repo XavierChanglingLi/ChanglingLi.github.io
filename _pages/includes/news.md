@@ -68,18 +68,67 @@
 .news-content a:hover {
   color: var(--accent-hover);
 }
+
+.news-item.news-item--highlight {
+  border: 1px solid rgba(217, 119, 87, 0.6);
+  border-left: 4px solid #D97757;
+  background: linear-gradient(135deg, rgba(217, 119, 87, 0.32) 0%, rgba(217, 119, 87, 0.18) 100%);
+  box-shadow: 0 2px 12px rgba(217, 119, 87, 0.35);
+}
+
+.news-item.news-item--highlight:hover {
+  box-shadow: 0 4px 16px rgba(217, 119, 87, 0.5);
+}
+
+.news-badge {
+  display: inline-block;
+  background-color: #D97757;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 8px;
+  letter-spacing: 0.5px;
+}
 </style>
 
 <div class="news-scrollable">
 
 <div class="news-item">
-  <span class="news-date">2026.05</span>
-  <span class="news-content">🐙 Our position paper <a href="https://icml.cc/virtual/2026/poster/67167">Safe Models Do Not Guarantee Safe Societies</a> is accepted by ICML 2026 (<b>Spotlight 🏆</b>).</span>
+  <span class="news-date">2026.10</span>
+  <span class="news-content">🦀 Our paper <a href="https://arxiv.org/abs/2605.23055">Decomposing and Measuring Evaluation Awareness</a> is accepted to the NeurIPS 2026 Agents in the Wild workshop. See you in Sydney!</span>
+</div>
+
+<div class="news-item news-item--highlight">
+  <span class="news-date">2026.09</span>
+  <span class="news-badge"><i class="fa-solid fa-star"></i> Highlight</span>
+  <span class="news-content">🐡 Our work on <a href="https://arxiv.org/abs/2605.23055">evaluation awareness</a> is used by <span style="color: #D97757; font-weight: 700;">Anthropic</span> in the alignment evaluation of Claude Opus 5.5 (<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf">System Card</a>, p. 137)!</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2026.07</span>
+  <span class="news-content">🦭 I graduated from <a href="https://ethz.ch/en.html">ETH Zurich</a> with a Master's degree in Computer Science!</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2026.07</span>
+  <span class="news-content">🐋 I will be co-organizing the 2nd <a href="https://trustworthy-ai-for-good.github.io/index.html">AI4GOOD workshop</a> at NeurIPS 2026 in Paris.</span>
 </div>
 
 <div class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-content">🪼 I will be co-organizing the 1st <a href="https://trustworthy-ai-for-good.github.io/">AI4GOOD workshop</a> at ICML 2026.</span>
+  <span class="news-content">🦐 I will attend the <a href="https://www.far.ai/events/seoul-alignment-workshop-2026">FAR.AI Alignment Workshop</a> and the <a href="https://foresight.org/events/supercooperation-the-future-of-ai-for-democracy/">Foresight Institute Supercooperation Workshop</a> in Seoul. Let's chat!</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2026.05</span>
+  <span class="news-content">🐙 Our position paper <a href="https://icml.cc/virtual/2026/poster/67167">Safe Models Do Not Guarantee Safe Societies</a> is accepted by ICML 2026 (<b>Spotlight 🏆</b>). See you in Seoul!</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2026.05</span>
+  <span class="news-content">🪼 I will be co-organizing the 1st <a href="https://trustworthy-ai-for-good.github.io/icml-2026.html">AI4GOOD workshop</a> at ICML 2026.</span>
 </div>
 
 <div class="news-item">

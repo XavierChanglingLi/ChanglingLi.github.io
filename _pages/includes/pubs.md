@@ -76,6 +76,45 @@
 .pubs-section-content::-webkit-scrollbar-thumb:hover {
   background: var(--accent-hover);
 }
+
+.pubs-cooking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  padding: 1.8em 1em;
+  margin-bottom: 1em;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+.pubs-cooking-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.pubs-cooking-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pubs-cooking-bounce 1.2s infinite ease-in-out;
+}
+
+.pubs-cooking-dots span:nth-child(2) { animation-delay: 0.15s; }
+.pubs-cooking-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes pubs-cooking-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40% { transform: translateY(-8px); opacity: 1; }
+}
+
+.pubs-cooking-text {
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 </style>
 
 # Publications
@@ -89,14 +128,19 @@
 
 <div class="pubs-section-content" id="preprint-section">
 
-<div class='paper-box cat-safety'><span class='paper-box-label'>Preprint 2026</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
+<div class="pubs-cooking">
+<div class="pubs-cooking-dots"><span></span><span></span><span></span></div>
+<div class="pubs-cooking-text">Cooking...</div>
+</div>
+
+<div class='paper-box cat-safety'><span class='paper-box-label'>AIWILD Workshop 2026</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Decomposing and Measuring Evaluation Awareness](https://arxiv.org/abs/2605.23055)
 
-**Changling Li**, Terry Jingchen Zhang, Jie Zhang, Zhijing Jin, Sahar Abdelnabi, Maksym Andriushchenko
+**Changling Li**, Terry Jingchen Zhang, Jie Zhang, Zhijing Jin, Florian Tramèr, Sahar Abdelnabi, Maksym Andriushchenko
 
-<i class="fa-brands fa-github"></i> [Code](https://github.com/aisa-group/decomposing-eval-awareness) / <i class="fa-solid fa-database"></i> [HuggingFace](https://huggingface.co/datasets/aisa-group/EvalAwareBench) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2605.23055)
+<i class="fa-brands fa-github"></i> [Code](https://github.com/aisa-group/decomposing-eval-awareness) / <i class="fa-solid fa-database"></i> [HuggingFace](https://huggingface.co/datasets/aisa-group/EvalAwareBench) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2605.23055) / <i class="fa-brands fa-x-twitter"></i> [Tweet](https://x.com/ChanglingXavier/status/2058907479119970445?s=20)
 </div>
 </div>
 
@@ -111,7 +155,7 @@
 
 <div class="pubs-section-content" id="accepted-section">
 
-<div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026 Spotlight 🏆</span><span class='paper-category-tag tag-governance'>AI Governance</span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
+<div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026 Spotlight 🏆</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-governance'>AI Governance</span></span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Safe Models Do Not Guarantee Safe Societies](https://icml.cc/virtual/2026/poster/67167)
@@ -122,14 +166,14 @@ David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Bli
 </div>
 </div>
 
-<div class='paper-box cat-multiagent'><span class='paper-box-label'>EMNLP 2025</span><span class='paper-category-tag tag-multiagent'>Multi-Agent Systems</span><div class='paper-box-image'><div><img src='images/EMNLP_2025.png' alt="EMNLP 2025" width="100%"></div></div>
+<div class='paper-box cat-multiagent'><span class='paper-box-label'>EMNLP 2025</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-multiagent'>Multi-Agent Systems</span></span><div class='paper-box-image'><div><img src='images/EMNLP_2025.png' alt="EMNLP 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models](https://arxiv.org/abs/2506.22957)
 
 Ethan Choi\*, **Changling Li**\*, Yongjin Yang, Zhijing Jin
 
-<i class="fa-brands fa-github"></i> [Code](https://github.com/younwoochoi/InterlocutorAwarenessLLM) / <i class="fa-solid fa-file-pdf"></i> [Poster](docs/EMNLP_2025_Poster.pdf) / <i class="fa-solid fa-person-chalkboard"></i> [Presentation](https://docs.google.com/presentation/d/1_mpKH68oVT3z-otLZBWj8AQAoT5Bs4kT5X6huYWYBIQ/edit?usp=sharing) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2506.22957)
+<i class="fa-brands fa-github"></i> [Code](https://github.com/younwoochoi/InterlocutorAwarenessLLM) / <i class="fa-solid fa-file-pdf"></i> [Poster](docs/EMNLP_2025_Poster.pdf) / <i class="fa-solid fa-person-chalkboard"></i> [Presentation](https://docs.google.com/presentation/d/1_mpKH68oVT3z-otLZBWj8AQAoT5Bs4kT5X6huYWYBIQ/edit?usp=sharing) / <i class="fa-solid fa-file-lines"></i> [arXiv](https://arxiv.org/abs/2506.22957) / <i class="fa-brands fa-x-twitter"></i> [Tweet](https://x.com/ChanglingXavier/status/1942522677169676790?s=20)
 </div>
 </div>
 

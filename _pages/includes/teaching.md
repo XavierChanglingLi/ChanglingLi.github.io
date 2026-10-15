@@ -1,5 +1,8 @@
 # Teaching
 
+**Teaching Assistant, [University of Tübingen](https://uni-tuebingen.de/en/)**, 2026
+- [AI Safety](https://github.com/aisa-group/tue-ai-safety-course)
+
 **Teaching Assistant, [Department of Computer Science, Colby College](https://cs.colby.edu/)**, 2019 - 2022
 - CS 353 Interactive System
 - CS 251 Data Analysis and Visualization
