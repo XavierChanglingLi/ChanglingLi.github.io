@@ -133,7 +133,7 @@
 <div class="pubs-cooking-text">Cooking...</div>
 </div>
 
-<div class='paper-box cat-safety'><span class='paper-box-label'>AIWILD Workshop 2026 Oral 🏆</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
+<div class='paper-box cat-safety' id='paper-eval-awareness'><span class='paper-box-label'>AIWILD Workshop 2026 Oral 🏆</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Decomposing and Measuring Evaluation Awareness](https://arxiv.org/abs/2605.23055)
@@ -155,7 +155,7 @@
 
 <div class="pubs-section-content" id="accepted-section">
 
-<div class='paper-box cat-governance'><span class='paper-box-label'>ICML 2026 Spotlight 🏆</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-governance'>AI Governance</span></span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
+<div class='paper-box cat-governance' id='paper-safe-societies'><span class='paper-box-label'>ICML 2026 Spotlight 🏆</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-governance'>AI Governance</span></span><div class='paper-box-image'><div><img src='images/ICML_2026.png' alt="ICML 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Safe Models Do Not Guarantee Safe Societies](https://icml.cc/virtual/2026/poster/67167)
@@ -166,7 +166,7 @@ David Guzman Piedrahita, **Changling Li**, Dave Banerjee, Terry Zhang, Kevin Bli
 </div>
 </div>
 
-<div class='paper-box cat-multiagent'><span class='paper-box-label'>EMNLP 2025</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-multiagent'>Multi-Agent Systems</span></span><div class='paper-box-image'><div><img src='images/EMNLP_2025.png' alt="EMNLP 2025" width="100%"></div></div>
+<div class='paper-box cat-multiagent' id='paper-a2a-tom'><span class='paper-box-label'>EMNLP 2025</span><span class='paper-category-tags'><span class='paper-category-tag tag-safety'>AI Safety</span><span class='paper-category-tag tag-multiagent'>Multi-Agent Systems</span></span><div class='paper-box-image'><div><img src='images/EMNLP_2025.png' alt="EMNLP 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models](https://arxiv.org/abs/2506.22957)

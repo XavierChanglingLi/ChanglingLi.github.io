@@ -21,3 +21,5 @@ redirect_from:
 {% include_relative includes/teaching.md %}
 
 {% include_relative includes/others.md %}
+
+{% include_relative includes/visitors.md %}

@@ -6,6 +6,11 @@ repository: "XavierChanglingLi/ChanglingLi.github.io"
 # google analytics (leave empty to disable)
 google_analytics_id:
 
+# Visitor map (leave sheet_id empty to hide the map)
+visitor_map:
+  sheet_id: ""
+  log_url: ""
+
 # SEO Related
 google_site_verification:
 bing_site_verification:
