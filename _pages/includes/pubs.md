@@ -133,7 +133,7 @@
 <div class="pubs-cooking-text">Cooking...</div>
 </div>
 
-<div class='paper-box cat-safety'><span class='paper-box-label'>AIWILD Workshop 2026</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
+<div class='paper-box cat-safety'><span class='paper-box-label'>AIWILD Workshop 2026 Oral 🏆</span><span class='paper-category-tag tag-safety'>AI Safety</span><div class='paper-box-image'><div><img src='images/EvalAware_2026.gif' alt="EvalAwareBench 2026" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Decomposing and Measuring Evaluation Awareness](https://arxiv.org/abs/2605.23055)

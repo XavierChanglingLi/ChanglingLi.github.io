@@ -97,7 +97,7 @@
 
 <div class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-content">🦀 Our paper <a href="https://arxiv.org/abs/2605.23055">Decomposing and Measuring Evaluation Awareness</a> is accepted to the NeurIPS 2026 Agents in the Wild workshop. See you in Sydney!</span>
+  <span class="news-content">🦀 Our paper <a href="https://arxiv.org/abs/2605.23055">Decomposing and Measuring Evaluation Awareness</a> is accepted to the NeurIPS 2026 Agents in the Wild workshop (Oral 🏆). See you in Sydney!</span>
 </div>
 
 <div class="news-item news-item--highlight">
