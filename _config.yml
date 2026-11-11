@@ -8,8 +8,8 @@ google_analytics_id:
 
 # Visitor map (leave sheet_id empty to hide the map)
 visitor_map:
-  sheet_id: ""
-  log_url: ""
+  sheet_id: "1RtOFFfHs3hpujp7Df6hNu89tHFJnGU8ad5Js_cG9g8s"
+  log_url: "https://script.google.com/macros/s/AKfycbxEoZBoQnR3k8Ps-1oHMAAQPR64cTTduhFNItJh4TNIBo7WRWhsvXr0DSTHEHofmh8h/exec"
 
 # SEO Related
 google_site_verification:

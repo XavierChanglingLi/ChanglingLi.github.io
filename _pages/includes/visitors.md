@@ -94,7 +94,7 @@
         if (code && n) { counts.push({ code: String(code).trim().toUpperCase(), n: n }); total += n; }
       });
       document.getElementById('visitor-map-count').textContent =
-        total.toLocaleString('en') + ' visitors from ' + counts.length + (counts.length === 1 ? ' country' : ' countries');
+        total.toLocaleString('en') + (total === 1 ? ' visitor from ' : ' visitors from ') + counts.length + (counts.length === 1 ? ' country' : ' countries');
       google.charts.setOnLoadCallback(draw);
     })
     .catch(function () {});
