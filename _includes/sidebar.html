@@ -1,6 +1,14 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}
+    {% if site.visitor_map.sheet_id and site.visitor_map.sheet_id != "" %}
+    <div class="visitor-map visitor-map--sidebar">
+      <div class="visitor-map-title"><i class="fa-solid fa-earth-americas"></i> Visitors</div>
+      <div class="visitor-map-chart"></div>
+      <div class="visitor-map-count"></div>
+    </div>
+    {% endif %}
+  {% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}

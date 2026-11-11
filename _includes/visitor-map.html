@@ -1,0 +1,131 @@
+{% if site.visitor_map.sheet_id and site.visitor_map.sheet_id != "" %}
+<style>
+.visitor-map {
+  text-align: center;
+}
+.visitor-map-title {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.2em;
+}
+.visitor-map-chart {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+.visitor-map-count {
+  font-size: 0.7em;
+  color: var(--text-muted);
+  margin-top: 0.2em;
+}
+.visitor-map--sidebar {
+  display: none;
+  margin-top: 1.5em;
+}
+.visitor-map--page {
+  margin: 3em auto 0;
+  max-width: 560px;
+}
+@media (min-width: 925px) {
+  .visitor-map--sidebar { display: block; }
+  .visitor-map--page { display: none; }
+}
+</style>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+(function () {
+  var SHEET_ID = "{{ site.visitor_map.sheet_id }}";
+  var LOG_URL = "{{ site.visitor_map.log_url }}";
+  var LOGGED_KEY = "visitor-map-logged";
+  var counts = null;
+  var total = 0;
+
+  var isLocal = ['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) !== -1;
+  var alreadyLogged = false;
+  try { alreadyLogged = localStorage.getItem(LOGGED_KEY) === '1'; } catch (e) {}
+
+  if (LOG_URL && !isLocal && !alreadyLogged) {
+    fetch('https://www.cloudflare.com/cdn-cgi/trace')
+      .then(function (r) { return r.text(); })
+      .then(function (text) {
+        var m = text.match(/^loc=([A-Z]{2})$/m);
+        if (!m || m[1] === 'XX' || m[1] === 'T1') return;
+        return fetch(LOG_URL + '?country=' + m[1], { mode: 'no-cors' }).then(function () {
+          try { localStorage.setItem(LOGGED_KEY, '1'); } catch (e) {}
+        });
+      })
+      .catch(function () {});
+  }
+
+  function cssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  var regionNames = window.Intl && Intl.DisplayNames ? new Intl.DisplayNames(['en'], { type: 'region' }) : null;
+
+  function draw() {
+    if (!counts || !window.google || !google.visualization) return;
+    var label = total.toLocaleString('en') + (total === 1 ? ' visitor from ' : ' visitors from ') +
+      counts.length + (counts.length === 1 ? ' country' : ' countries');
+    document.querySelectorAll('.visitor-map-count').forEach(function (el) { el.textContent = label; });
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Country');
+    data.addColumn('number', 'Visitors');
+    counts.forEach(function (c) {
+      var name = c.code;
+      try { if (regionNames) name = regionNames.of(c.code) || c.code; } catch (e) {}
+      data.addRow([{ v: c.code, f: name }, c.n]);
+    });
+    document.querySelectorAll('.visitor-map-chart').forEach(function (el) {
+      if (!el.offsetWidth) return;
+      new google.visualization.GeoChart(el).draw(data, {
+        backgroundColor: 'transparent',
+        datalessRegionColor: cssVar('--map-empty'),
+        defaultColor: cssVar('--map-empty'),
+        colorAxis: { colors: [cssVar('--map-low'), cssVar('--map-high')] },
+        legend: 'none',
+        keepAspectRatio: true
+      });
+    });
+  }
+
+  google.charts.load('current', { packages: ['geochart'] });
+
+  var query = encodeURIComponent('select B, count(A) where B is not null group by B');
+  fetch('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:json&tq=' + query)
+    .then(function (r) { return r.text(); })
+    .then(function (text) {
+      var json = JSON.parse(text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1));
+      counts = [];
+      json.table.rows.forEach(function (row) {
+        var code = row.c[0] && row.c[0].v;
+        var n = row.c[1] && row.c[1].v;
+        if (code && n) { counts.push({ code: String(code).trim().toUpperCase(), n: n }); total += n; }
+      });
+      google.charts.setOnLoadCallback(draw);
+    })
+    .catch(function () {});
+
+  // The map makes the sticky sidebar taller than short screens; stick it by its bottom edge instead so the map stays visible.
+  function fitSidebar() {
+    var sidebar = document.querySelector('.sidebar.sticky');
+    if (!sidebar) return;
+    if (window.innerWidth < 925) { sidebar.style.top = ''; return; }
+    var defaultTop = 6 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    var fitTop = window.innerHeight - sidebar.offsetHeight - 16;
+    sidebar.style.top = fitTop < defaultTop ? fitTop + 'px' : '';
+  }
+
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () { draw(); fitSidebar(); }, 200);
+  });
+  window.addEventListener('load', fitSidebar);
+  fitSidebar();
+})();
+</script>
+{% endif %}

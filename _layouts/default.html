@@ -28,6 +28,7 @@
     </div>
 
     {% include scripts.html %}
+    {% if page.author_profile or layout.author_profile %}{% include visitor-map.html %}{% endif %}
 
   </body>
 </html>
